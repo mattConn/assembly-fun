@@ -17,8 +17,6 @@ section .data
 
 	msg db "Entering loop", 10, 0
 
-	ecxMsg db "ECX: $d", 10, 0
-
 	newline db 10, 0
 
 section .text
