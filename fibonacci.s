@@ -33,8 +33,7 @@ main:
 		add edx, eax
 
 		; check for overflow
-		cmp edx,0
-		jl END
+		jo END
 
 		; print sum
 		push edx ; push sum
