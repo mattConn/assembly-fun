@@ -1,4 +1,3 @@
-extern printf
 ; division mnemonic
 ; 32 bit:
 ; edx:eax = dividend hi and low
@@ -6,9 +5,11 @@ extern printf
 ; div reg/imm => divide eax by reg/imm, quotient in eax, remainder in edx
 
 ; assemble:
-; nasm -f elf32 divison.s -o divison.o
+; nasm -f elf32 division.s -o division.o
 ; link:
-; gcc -m32 divison.o -o divison
+; gcc -m32 division.o -o division
+
+extern printf
 
 section .data
 
